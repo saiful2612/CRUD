@@ -8,7 +8,7 @@ if(isset($_POST['done'])){
     $nationality=$_POST['nationality'];
     $phone=$_POST['phone'];
 
-    $sql= "UPDATE `studentlist` SET `username` = '$username', `nationality` = '$nationality' WHERE `studentlist`.`id` = $id";
+    $sql= "UPDATE `studentlist` SET `username` = '$username', `nationality` = '$nationality',`phone`='$phone'  WHERE `studentlist`.`id` = $id";
 
     $query =mysqli_query($con, $sql);
 
@@ -40,18 +40,18 @@ if(isset($_POST['done'])){
                     <h1 class="text-white text-center">Update Information</h1>
                 </div>
 
-                <label for="">User name</label>
-                <input type="text" name="username" class="form-control"><br>
+                <label for=""><b>Student Name</b></label>
+                <input type="text" name="username" class="form-control" required><br>
 
-                <label for="">Nationality</label>
-                <input type="text" name="nationality" class="form-control"><br>
+                <label for=""><b>Nationality</b></label>
+                <input type="text" name="nationality" class="form-control" required><br>
 
-                <label for="">Phone Number</label>
-                <input type="int" name="phone" class="form-control"><br>
+                <label for=""><b>Phone Number</b></label>
+                <input type="int" name="phone" class="form-control" required><br>
 
                 <button class="btn btn-success" name= "done" >Submit</button><br>
 
-                <button class="btn btn-warning"><a href="display.php">Go To List</a></button>
+                <button class="btn btn-warning"><a href="display.php">Go To List</a></button><br>
 
 
             </div>

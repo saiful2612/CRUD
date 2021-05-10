@@ -51,22 +51,22 @@ if(isset($_POST['done'])){
         <form method="post" action="">
             <br><div class="card">
                 <div class="card-header bg-dark">
-                    <h1 class="text-white text-center">Insert Opearation</h1>
+                    <h2 class="text-white text-center">International Student Registration Form</h2>
                 </div>
 
-                <label for="">User name</label>
+                <label for="" > <b>Student Name</b></label>
                 <input type="text" name="username" class="form-control" required><br>
 
-                <label for="">Nationality</label>
+                <label for=""><b>Nationality</b></label>
                 <input type="text" name="nationality" class="form-control" required><br>
 
-                <label for="">Phone Number</label>
+                <label for=""><b>Phone Number</b></label>
                 <input type="int" name="phone" class="form-control" required><br>
 
                 <button class="btn btn-success" name= "done" >Submit</button><br>
 
                 
-                <button class="btn btn-warning"><a href="display.php">Check Form</a></button>
+                <button class="btn btn-warning"><a href="display.php">Check Form</a></button><br>
 
             </div>
         </form>

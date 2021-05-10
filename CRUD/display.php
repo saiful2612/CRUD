@@ -18,7 +18,7 @@
     <div class="container">
         <div class="col-lg-12">
             <br><br>
-            <h1 class="text-center text-primary">Display table data</h1>
+            <h1 class="text-center text-primary">Student List</h1>
             <br>
             <table class="table table-striped table-hover table-bordered">
                 <tr class="bg-dark text-white text-center">
@@ -47,8 +47,7 @@
                     <td> <?php echo $res['nationality']; ?></td>
                     <td> <?php echo $res['phone']; ?></td>
                     <td> <button class="btn btn-primary" ><a href="update.php?id=<?php echo $res['id'];
-                    ?>" class="text-white" > Update </a> </button> </td>
-                    <td><button class="btn btn-danger" > <a href="delete.php?id=<?php echo $res['id']; ?>" class="text-white">Delete</a> </button></td>
+                    ?>" class="text-white" > Update </a> </button> <button class="btn btn-danger" > <a href="delete.php?id=<?php echo $res['id']; ?>" class="text-white">Delete</a> </button> </td>
                 </tr>
 
                 <?php
