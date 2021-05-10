@@ -35,7 +35,7 @@
 
         $sql= " SELECT * FROM studentlist";
 
-        $query =mysqli_query($con, $sql);
+        $query =mysqli_query($conn, $sql);
 
         while($res= mysqli_fetch_array($query)){
 

@@ -10,7 +10,7 @@ if(isset($_POST['done'])){
 
     $sql= "INSERT INTO `studentlist` (`username`, `nationality`, `phone`) value ('$username','$nationality','$phone')";
 
-    $query =mysqli_query($con, $sql);
+    $query =mysqli_query($conn, $sql);
 
     if($query){
     ?>

@@ -10,7 +10,7 @@ if(isset($_POST['done'])){
 
     $sql= "UPDATE `studentlist` SET `username` = '$username', `nationality` = '$nationality',`phone`='$phone'  WHERE `studentlist`.`id` = $id";
 
-    $query =mysqli_query($con, $sql);
+    $query =mysqli_query($conn, $sql);
 
     header('location: display.php');
 }

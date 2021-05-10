@@ -1,8 +1,14 @@
 <?php
 
-$con=mysqli_connect('localhost','root');
+//Connecting to the database
+$servername= "localhost";
+$username = "root";
+$password = "";
+$database = "admissionform";
 
-mysqli_select_db($con, 'admissionform');
+// Create connection 
+$conn= mysqli_connect($servername, $username, $password, $database);
+
 
 
 ?>
