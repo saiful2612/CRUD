@@ -1,6 +1,21 @@
 <?php
 include 'conn.php';
 
+//  $_GET['id'] is used to understand the clicking data by its id.
+$id=$_GET['id'];
+
+$sql="SELECT * FROM studentlist WHERE id= $id";
+$query=mysqli_query($conn, $sql);
+
+// fetch data from database and renamed it to fill the update box
+while($res=mysqli_fetch_array($query)){
+    
+    $old_id= $res['id'];             
+    $old_username= $res['username'];
+    $old_nationality= $res['nationality'];
+    $old_phone= $res['phone'];
+}
+
 if(isset($_POST['done'])){
 
     $id=$_GET['id'];
@@ -41,13 +56,13 @@ if(isset($_POST['done'])){
                 </div>
 
                 <label for=""><b>Student Name</b></label>
-                <input type="text" name="username" class="form-control" required><br>
+                <input type="text" name="username" class="form-control" value="<?php echo $old_username;?>" required><br>  
 
                 <label for=""><b>Nationality</b></label>
-                <input type="text" name="nationality" class="form-control" required><br>
+                <input type="text" name="nationality" class="form-control" value="<?php echo $old_nationality;?>" required><br>
 
                 <label for=""><b>Phone Number</b></label>
-                <input type="int" name="phone" class="form-control" required><br>
+                <input type="int" name="phone" class="form-control" value="<?php echo $old_phone;?>" required><br>
 
                 <button class="btn btn-success" name= "done" >Submit</button><br>
 

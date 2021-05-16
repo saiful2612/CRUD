@@ -54,13 +54,19 @@ if(isset($_POST['done'])){
                     <h2 class="text-white text-center">International Student Registration Form</h2>
                 </div>
 
-                <label for="" > <b>Student Name</b></label>
+                <label for="" > 
+                    <b>Student Name</b>
+                </label>
                 <input type="text" name="username" class="form-control" required><br>
 
-                <label for=""><b>Nationality</b></label>
+                <label for="">
+                    <b>Nationality</b>
+                </label>
                 <input type="text" name="nationality" class="form-control" required><br>
 
-                <label for=""><b>Phone Number</b></label>
+                <label for="">
+                    <b>Phone Number</b>
+                </label>
                 <input type="int" name="phone" class="form-control" required><br>
 
                 <button class="btn btn-success" name= "done" >Submit</button><br>
